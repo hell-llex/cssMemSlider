@@ -49,7 +49,6 @@ body {
 .carousel {
 	height: 90%;
 	width: 3290px;
-	/* margin-left: 2490px; */
 	margin-left: 0px;
 	display: flex;
 	flex-direction: row;
@@ -63,7 +62,6 @@ body {
 .carousel div {
 	height: 100%;
 	width: 800px;
-	
 	position: relative;
 	display: block;
 	border-radius: 30px;
@@ -103,26 +101,27 @@ body {
 
 .slider-text {
 	display: flex;
-	/* flex-direction: row; */
 	justify-content: start;
 	align-items: center;
 	gap: 10px;
 	overflow: hidden;
-	width: 465px;
+	width: 510px;
 	height: 100%;
 	padding: 30px 30px;
 }
 
 .carousel-text {
 	height: 100%;
-	width: 1940px;
+	width: 1980px;
+
 	margin-left: 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
 	align-items: center;
-	gap: 30px;
+	gap: 60px;
 	border-radius: 30px;
+	transition: all ease-in-out 600ms;
 }
 
 .carousel-text p {
@@ -133,13 +132,9 @@ body {
 	display: block;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 130%;
 	color: black;
-	/* border-radius: 30px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain; */
 }
 
 .controls {
@@ -176,7 +171,6 @@ body {
 }
 
 .controls label:hover{
-	/* transition: all ease-in-out 300ms; */
 	background: rgb(245, 245, 245);
 }
 .control {
@@ -198,7 +192,9 @@ body {
 #slide-1:checked ~ .slider .carousel {
 	margin-left: 0px;
 }
-
+#slide-1:checked ~ .container-controls .slider-text .carousel-text {
+	margin-left: 0px;
+}
 
 #slide-2:checked ~ .slider .carousel .slide-2 {
 	filter: blur(0px);
@@ -206,6 +202,9 @@ body {
 }
 #slide-2:checked ~ .slider .carousel {
 	margin-left: -830px;
+}
+#slide-2:checked ~ .container-controls .slider-text .carousel-text {
+	margin-left: -510px;
 }
 
 #slide-3:checked ~ .slider .carousel .slide-3 {
@@ -215,6 +214,9 @@ body {
 #slide-3:checked ~ .slider .carousel {
 	margin-left: -1660px;
 }
+#slide-3:checked ~ .container-controls .slider-text .carousel-text {
+	margin-left: -1020px;
+}
 
 #slide-4:checked ~ .slider .carousel .slide-4 {
 	filter: blur(0px);
@@ -222,4 +224,7 @@ body {
 }
 #slide-4:checked ~ .slider .carousel {
 	margin-left: -2490px;
+}
+#slide-4:checked ~ .container-controls .slider-text .carousel-text {
+	margin-left: -1530px;
 }
