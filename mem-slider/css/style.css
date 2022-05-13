@@ -57,6 +57,7 @@ body {
 	align-items: center;
 	gap: 30px;
 	border-radius: 30px;
+	transition: all ease-in-out 600ms;
 }
 
 .carousel div {
@@ -69,6 +70,9 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-color:aqua;
+	filter: blur(20px);
+	transition: all ease-in-out 900ms;
 }
 
 .slide-1 {
@@ -185,4 +189,37 @@ body {
 #slide-4:checked ~ .container-controls .controls .lab-4 {
 	background: transparent;
 	border: 3px solid rgba(245, 245, 245, 0.7);
+}
+
+#slide-1:checked ~ .slider .carousel .slide-1 {
+	filter: blur(0px);
+	transition: all ease-in-out 900ms;
+}
+#slide-1:checked ~ .slider .carousel {
+	margin-left: 0px;
+}
+
+
+#slide-2:checked ~ .slider .carousel .slide-2 {
+	filter: blur(0px);
+	transition: all ease-in-out 900ms;
+}
+#slide-2:checked ~ .slider .carousel {
+	margin-left: -830px;
+}
+
+#slide-3:checked ~ .slider .carousel .slide-3 {
+	filter: blur(0px);
+	transition: all ease-in-out 900ms;
+}
+#slide-3:checked ~ .slider .carousel {
+	margin-left: -1660px;
+}
+
+#slide-4:checked ~ .slider .carousel .slide-4 {
+	filter: blur(0px);
+	transition: all ease-in-out 900ms;
+}
+#slide-4:checked ~ .slider .carousel {
+	margin-left: -2490px;
 }
