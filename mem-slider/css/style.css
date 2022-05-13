@@ -148,3 +148,41 @@ body {
 	height: 100px;
 	padding: 10px 30px;
 }
+
+.controls label {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background: rgba(245, 245, 245, 0.5);  
+	backdrop-filter: blur(15px);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(30px);
+	border-radius: 50%;
+	transition: all ease-in-out 600ms;
+}
+
+.controls label::after {
+	content: " ";
+	display: block;
+	height: 46px;
+	width: 46px;
+	margin: -15px 0px 0px -15px;
+	border-radius: 50%;
+}
+
+.controls label:hover{
+	/* transition: all ease-in-out 300ms; */
+	background: rgb(245, 245, 245);
+}
+.control {
+	display: none;
+}
+
+#slide-1:checked ~ .container-controls .controls .lab-1,
+#slide-2:checked ~ .container-controls .controls .lab-2,
+#slide-3:checked ~ .container-controls .controls .lab-3,
+#slide-4:checked ~ .container-controls .controls .lab-4 {
+	background: transparent;
+	border: 3px solid rgba(245, 245, 245, 0.7);
+}
