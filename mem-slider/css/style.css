@@ -15,6 +15,10 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	background-color: #04536d;
+	background-image: url("../assets/image/back.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .container {
 	display: flex;
@@ -59,7 +63,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color:aqua;
 	filter: blur(1rem);
 	transition: all ease-in-out 900ms;
 }
@@ -70,10 +73,10 @@ body {
 	background-image: url("../assets/image/mem2.jpg")
 }
 .slide-3 {
-	background-image: url("../assets/image/mem1.jpg")
+	background-image: url("../assets/image/mem3.jpg")
 }
 .slide-4 {
-	background-image: url("../assets/image/mem2.jpg")
+	background-image: url("../assets/image/mem4.jpg")
 }
 .container-controls {
 	display: flex;
@@ -218,6 +221,12 @@ body {
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 1.7vw;
+	}
+	body {
+		background-image: url("../assets/image/back-mob.jpg");
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.container {
 		height: 50rem;
