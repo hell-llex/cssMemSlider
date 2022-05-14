@@ -206,3 +206,59 @@ body {
 #slide-4:checked ~ .container-controls .slider-text .carousel-text {
 	transform: translateX(-72rem);
 }
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 1.5vw;
+	}
+	.carousel-text p {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 1.7vw;
+	}
+	.container {
+		height: 50rem;
+	}
+	.container-controls {
+		flex-direction: column-reverse;
+		gap: 1rem;
+		width: 40rem;
+		height: 15rem;
+	}
+	.slider-text {
+		width: 40rem;
+	}
+	.carousel-text p {
+		padding: 0.5rem 0rem;
+		width: 38rem;
+		height: 6rem;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.controls {
+		align-items: center;
+		gap: 1.5rem;
+		padding: 0rem 1rem;
+		width: 30rem;
+	}
+	.controls label {
+		width: 5rem;
+		height: 5rem;
+	}
+	.point{
+		width: 2rem;
+		height: 2rem;
+	}
+	#slide-2:checked ~ .container-controls .slider-text .carousel-text {
+		transform: translateX(-40rem);
+	}
+	#slide-3:checked ~ .container-controls .slider-text .carousel-text {
+		transform: translateX(-80rem);
+	}
+	#slide-4:checked ~ .container-controls .slider-text .carousel-text {
+		transform: translateX(-120rem);
+	}
+}
