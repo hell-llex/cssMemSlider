@@ -1,78 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 * {
-	padding: 0px;
-	margin: 0px;
-	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
 }
-:root {
-
+html {
+	font-size: 1vw;
 }
-
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
 	background-color: #04536d;
 }
-
 .container {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: center;
 	align-items: center;
-	padding: 30px;
-	width: 860px;
-	height: 700px;
-	border-top: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(15px);
-	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+	gap: 1rem;
+	padding: 2rem 1rem;
+	width: 45rem;
+	height: 40rem;
+	border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(4rem);
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
 	background: linear-gradient(180deg, rgba(210, 243, 194, 0.15) 0%, rgba(232, 238, 192, 0.096875) 51.56%, rgba(196, 196, 196, 0) 100%);
-	backdrop-filter: blur(10px);
-	border-radius: 30px;
+	border-radius: 2rem;
 }
-
 .slider {
-	height: 80%;
-	width: 100%;
 	overflow: hidden;
 	display: flex;
-	justify-content: start;
-	align-items: center;
-	background: red;
-	border-radius: 30px;
+	justify-content: center;
+	align-items: flex-end;
+	height: 30rem;
+	width: 40rem;
+	border-radius: 2rem;
 }
-
 .carousel {
-	height: 90%;
-	width: 3290px;
-	margin-left: 0px;
 	display: flex;
-	flex-direction: row;
-	justify-content: start;
+	flex-direction: column-reverse;
+	justify-content: center;
 	align-items: center;
-	gap: 30px;
-	border-radius: 30px;
+	gap: 3rem;
+	height: 129rem;
+	width: 40rem;
 	transition: all ease-in-out 600ms;
 }
-
 .carousel div {
-	height: 100%;
-	width: 800px;
 	position: relative;
 	display: block;
-	border-radius: 30px;
+	height: 30rem;
+	width: 40rem;
+	border-radius: 2rem;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-color:aqua;
-	filter: blur(20px);
+	filter: blur(1rem);
 	transition: all ease-in-out 900ms;
 }
-
 .slide-1 {
 	background-image: url("../assets/image/mem1.jpg")
 }
@@ -85,146 +75,134 @@ body {
 .slide-4 {
 	background-image: url("../assets/image/mem2.jpg")
 }
-
-.slide-text {
-
-}
-
 .container-controls {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	height: 150px;
+	width: 40rem;
+	height: 7rem;
 }
-
 .slider-text {
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	gap: 10px;
 	overflow: hidden;
-	width: 510px;
+	padding: 1rem 1rem;
+	width: 24rem;
 	height: 100%;
-	padding: 30px 30px;
 }
-
 .carousel-text {
 	height: 100%;
-	width: 1980px;
-
-	margin-left: 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
 	align-items: center;
-	gap: 60px;
-	border-radius: 30px;
+	gap: 2rem;
 	transition: all ease-in-out 600ms;
 }
-
 .carousel-text p {
 	height: 100%;
-	width: 450px;
-
+	width: 22rem;
 	position: relative;
 	display: block;
 	font-family: 'Roboto Mono', monospace;
+	font-size: 1.1rem;
 	font-weight: 700;
-	font-size: 22px;
 	line-height: 130%;
-	color: black;
+	color: whitesmoke;
+	text-align: start;
 }
-
 .controls {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	width: 30%;
-	height: 100px;
-	padding: 10px 30px;
+	align-items: flex-start;
+	gap: 0.3rem;
+	padding: 1rem 1rem;
+	width: 16rem;
+	height: 100%;
 }
-
 .controls label {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
 	cursor: pointer;
-	background: rgba(245, 245, 245, 0.5);  
-	backdrop-filter: blur(15px);
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(30px);
 	border-radius: 50%;
 	transition: all ease-in-out 600ms;
 }
-
-.controls label::after {
-	content: " ";
-	display: block;
-	height: 46px;
-	width: 46px;
-	margin: -15px 0px 0px -15px;
+.point{
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	cursor: pointer;
+	background: rgba(245, 245, 245, 0.5);
+	backdrop-filter: blur(4rem);
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
+	transition: all ease-in-out 600ms;
 }
-
-.controls label:hover{
+.controls label:hover .point{
+	transition: all ease-in-out 500ms;
 	background: rgb(245, 245, 245);
 }
 .control {
 	display: none;
 }
-
-#slide-1:checked ~ .container-controls .controls .lab-1,
-#slide-2:checked ~ .container-controls .controls .lab-2,
-#slide-3:checked ~ .container-controls .controls .lab-3,
-#slide-4:checked ~ .container-controls .controls .lab-4 {
+#slide-1:checked ~ .container-controls .controls .lab-1 .point,
+#slide-2:checked ~ .container-controls .controls .lab-2 .point,
+#slide-3:checked ~ .container-controls .controls .lab-3 .point,
+#slide-4:checked ~ .container-controls .controls .lab-4 .point {
 	background: transparent;
-	border: 3px solid rgba(245, 245, 245, 0.7);
+	border: 0.2rem solid rgba(245, 245, 245, 1);
+}
+.lab-1:active, .lab-2:active,
+.lab-3:active, .lab-4:active {
+	transform: scale(1.1);
 }
 
 #slide-1:checked ~ .slider .carousel .slide-1 {
-	filter: blur(0px);
+	filter: blur(0rem);
 	transition: all ease-in-out 900ms;
 }
 #slide-1:checked ~ .slider .carousel {
-	margin-left: 0px;
+	transform: translateY(0rem);
 }
 #slide-1:checked ~ .container-controls .slider-text .carousel-text {
-	margin-left: 0px;
+	transform: translateX(0rem);
 }
 
 #slide-2:checked ~ .slider .carousel .slide-2 {
-	filter: blur(0px);
+	filter: blur(0rem);
 	transition: all ease-in-out 900ms;
 }
 #slide-2:checked ~ .slider .carousel {
-	margin-left: -830px;
+	transform: translateY(33rem);
 }
 #slide-2:checked ~ .container-controls .slider-text .carousel-text {
-	margin-left: -510px;
+	transform: translateX(-24rem);
 }
 
 #slide-3:checked ~ .slider .carousel .slide-3 {
-	filter: blur(0px);
+	filter: blur(0rem);
 	transition: all ease-in-out 900ms;
 }
 #slide-3:checked ~ .slider .carousel {
-	margin-left: -1660px;
+	transform: translateY(66rem);
 }
 #slide-3:checked ~ .container-controls .slider-text .carousel-text {
-	margin-left: -1020px;
+	transform: translateX(-48rem);
 }
 
 #slide-4:checked ~ .slider .carousel .slide-4 {
-	filter: blur(0px);
+	filter: blur(0rem);
 	transition: all ease-in-out 900ms;
 }
 #slide-4:checked ~ .slider .carousel {
-	margin-left: -2490px;
+	transform: translateY(99rem);
 }
 #slide-4:checked ~ .container-controls .slider-text .carousel-text {
-	margin-left: -1530px;
+	transform: translateX(-72rem);
 }
